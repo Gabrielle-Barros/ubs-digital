@@ -71,3 +71,6 @@ A POC será considerada funcional quando permitir:
 A primeira versão não contemplará prontuário eletrônico, armazenamento de histórico clínico, emissão de receitas, telemedicina ou integração com sistemas nacionais do SUS.
 
 O desenvolvimento utilizará dados fictícios para testes, sem exposição de informações pessoais ou sensíveis coletadas durante a atividade extensionista.
+
+## 8. Vagas
+- Quando todas as vagas de um serviço ou período estiverem ocupadas, o sistema deverá bloquear novos agendamentos automáticos e informar ao cidadão sobre a indisponibilidade. O limite de vagas configurado não poderá ser ultrapassado.
