@@ -16,7 +16,15 @@ Desenvolver uma solução tecnológica que facilite o acesso da população aos 
 
 ## 4. Proposta de solução
 
-Desenvolver uma plataforma web com funcionalidades de cadastro de usuários, consulta de serviços, visualização de horários disponíveis e realização de agendamentos, incluindo fluxos automáticos e solicitações sujeitas à aprovação da unidade.
+O UBS Digital propõe o desenvolvimento de um sistema web para agendamento e gerenciamento de atendimentos em uma Unidade Básica de Saúde (UBS).
+
+O sistema permitirá que o cidadão consulte os serviços disponíveis, visualize os dias e horários com vagas e realize seu agendamento automaticamente, respeitando a disponibilidade previamente configurada pela equipe da unidade.
+
+A equipe da UBS poderá administrar os serviços, profissionais, horários, quantidade de vagas por turno e agendas destinadas exclusivamente a públicos específicos, como gestantes.
+
+O sistema também contará com funcionalidades administrativas para gerenciamento de ocorrências operacionais que possam comprometer os atendimentos programados, permitindo a comunicação com os cidadãos afetados e a orientação para reagendamento.
+
+A proposta busca reduzir a burocracia, facilitar o acesso aos serviços e melhorar a organização da rotina de atendimento da unidade.
 
 ## 5. Tecnologias previstas
 
