@@ -46,16 +46,28 @@ Os atores representam os usuários que interagem com a plataforma.
 | RNF06 | O sistema deverá manter registros de auditoria das operações relevantes. |
 | RNF07 | A arquitetura deverá permitir futuras expansões para outras UBS. |
 | RNF08 | O sistema deverá apresentar desempenho adequado às operações previstas na POC. |
+| RNF09 | O sistema deverá proteger os dados pessoais e sensíveis dos cidadãos, observando os princípios e requisitos da LGPD. |
+| RNF10 | O sistema deverá garantir a integridade dos agendamentos em operações simultâneas, evitando conflitos e ocupação duplicada de vagas. |
 
 ## 5. Regras gerais de negócio
 
-- Cada unidade deverá possuir seus próprios serviços e horários.
-- Um horário não poderá ser ocupado por agendamentos ativos incompatíveis.
-- Serviços configurados para agendamento automático terão confirmação após validação da disponibilidade.
-- Solicitações sujeitas à aprovação permanecerão pendentes até análise da equipe.
-- A aprovação deverá verificar novamente a disponibilidade do horário.
-- Solicitações pendentes poderão possuir prazo de expiração, com liberação do horário após o vencimento.
-- O acesso às funcionalidades deverá respeitar o perfil de cada usuário.
+## Regras gerais de negócio
+
+1. Cada unidade de saúde deverá possuir seus próprios serviços, dias de atendimento, horários e quantidade de vagas.
+2. Todos os agendamentos previstos no escopo inicial serão realizados automaticamente pelo sistema, sem necessidade de aprovação individual da equipe.
+3. A quantidade de vagas deverá ser configurável por serviço, dia e período de atendimento.
+4. O sistema deverá respeitar os horários estabelecidos e impedir que a quantidade de agendamentos ultrapasse o limite de vagas configurado.
+5. Quando todas as vagas de um serviço ou período estiverem ocupadas, o sistema deverá bloquear novos agendamentos e informar ao cidadão sobre a indisponibilidade.
+6. A disponibilidade deverá ser validada novamente no momento da confirmação, evitando agendamentos duplicados ou acima da capacidade.
+7. Agendamentos cancelados poderão liberar vagas para novas solicitações, conforme as regras da agenda.
+8. A equipe da UBS poderá configurar dias e horários destinados exclusivamente a públicos específicos, como gestantes.
+9. O sistema deverá realizar uma pergunta inicial ao cidadão sobre a condição de gestante, utilizando a resposta para direcionar a visualização das agendas exclusivas.
+10. A resposta sobre gestação deverá ser tratada com medidas de proteção de dados pessoais sensíveis, observando a LGPD e evitando armazenamento desnecessário.
+11. O sistema não deverá utilizar o sexo cadastrado como critério automático para bloquear o acesso às agendas exclusivas para gestantes.
+12. A equipe da UBS poderá registrar ocorrências operacionais que comprometam a realização dos atendimentos programados.
+13. Quando uma ocorrência afetar agendamentos existentes, a equipe poderá identificar os cidadãos impactados e enviar notificações informativas.
+14. As notificações deverão orientar o cidadão sobre a necessidade de realizar um novo agendamento.
+15. O sistema deverá respeitar os perfis de acesso e as permissões de cada usuário.
 
 ## 6. Critérios de aceitação
 
