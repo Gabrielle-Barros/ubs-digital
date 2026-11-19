@@ -15,20 +15,24 @@ Os atores representam os usuários que interagem com a plataforma.
 - **Administrador:** gerencia usuários, serviços e configurações da unidade.
 
 ## 3. Requisitos funcionais (RF)
-
+## Requisitos funcionais
 | Código | Descrição |
 |---|---|
-| RF01 | Permitir cadastro de cidadãos. |
-| RF02 | Permitir autenticação de usuários. |
+| RF01 | Permitir o cadastro de cidadãos. |
+| RF02 | Permitir autenticação dos usuários. |
 | RF03 | Exibir os serviços disponíveis na UBS. |
-| RF04 | Consultar horários disponíveis. |
-| RF05 | Permitir solicitação de agendamentos. |
-| RF06 | Confirmar automaticamente agendamentos configurados para esse modo. |
-| RF07 | Permitir aprovação ou rejeição de solicitações pela equipe da UBS. |
-| RF08 | Permitir cancelamento de agendamentos. |
-| RF09 | Permitir consulta ao histórico e ao status dos agendamentos. |
-| RF10 | Permitir gerenciamento de serviços, profissionais e horários. |
-| RF11 | Disponibilizar painel administrativo com indicadores básicos. |
+| RF04 | Permitir a consulta de dias e horários disponíveis. |
+| RF05 | Permitir que o cidadão solicite e confirme automaticamente um agendamento. |
+| RF06 | Realizar a validação da disponibilidade antes de confirmar o agendamento, respeitando os limites de vagas configurados. |
+| RF07 | Permitir o cancelamento de agendamentos conforme as regras estabelecidas. |
+| RF08 | Permitir que o cidadão consulte seus agendamentos e respectivos status. |
+| RF09 | Permitir o gerenciamento de serviços, profissionais, dias de atendimento, horários e quantidade de vagas. |
+| RF10 | Permitir a configuração de agendas exclusivas para públicos específicos, como gestantes. |
+| RF11 | Disponibilizar painel administrativo com indicadores básicos de agendamentos. |
+| RF12 | Permitir o registro e gerenciamento de ocorrências que comprometam os atendimentos programados.
+| RF13 | Permitir a identificação dos cidadãos afetados por uma ocorrência. |
+| RF14 | Permitir o envio de notificações aos cidadãos afetados, informando sobre a necessidade de reagendamento. |
+| RF15 | Permitir que o cidadão realize um novo agendamento conforme a disponibilidade da agenda. |
 
 ## 4. Requisitos não funcionais (RNF)
 
